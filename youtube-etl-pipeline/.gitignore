@@ -1,0 +1,14 @@
+# Ignore secrets
+.env
+
+# Ignore outputs
+*.csv
+*.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE settings
+.idea/
+.vscode/
