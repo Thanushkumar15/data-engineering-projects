@@ -1,26 +1,85 @@
-# Data Engineering Projects
+#Data Engineering Projects
 
-This repository contains real-world ETL projects demonstrating Python, AWS, and data pipeline skills.
+This repository contains real-world ETL projects demonstrating Python, PySpark, AWS, and data pipeline skills. Each project includes data extraction, transformation, and loading workflows, showcasing cloud-based ETL automation and analytics.
 
-## Projects
+Projects
+###1. Spotify Playlist ETL Pipeline
 
-1. **Spotify ETL Pipeline**
-   - Fetches playlist data from Spotify API
-   - Stores raw JSON in S3
-   - Transforms using AWS Glue
-   - Query via Athena
-   - [Folder → spotify-etl-pipeline](./spotify-etl-pipeline)
+Description: Serverless ETL pipeline to fetch, transform, and store Spotify playlist data for analytics.
 
-2. **YouTube ETL Pipeline**
-   - Local script version and AWS Lambda version
-   - Fetches channel stats and video data
-   - Stores data in S3
-   - Query via Athena
-   - [Folder → youtube-etl-pipeline](./youtube-etl-pipeline)
+Workflow:
 
-3. **Weather ETL Pipeline**
-   - Fetches live weather data from OpenWeatherMap API
-   - Stores CSV/JSON in S3
-   - Transforms with Glue
-   - Query via Athena
-   - [Folder → weather-etl-pipeline](./weather-etl-pipeline)
+Fetch playlist data from Spotify API using AWS Lambda
+
+Store raw JSON in Amazon S3
+
+Transform and clean data using PySpark on AWS Glue
+
+Store transformed data back into Amazon S3 (organized for analytics)
+
+Query and analyze the transformed data using Amazon Athena
+
+Automate execution using EventBridge for scheduled runs
+
+Tech Stack: Python, PySpark, AWS Lambda, AWS Glue, Amazon S3, Athena, EventBridge
+
+Folder: spotify-etl-pipeline
+
+###2. YouTube Channel Stats ETL Pipeline
+Version 1: Local Script
+
+Description: Local ETL pipeline to collect YouTube channel stats and prepare data for analytics.
+
+Workflow:
+
+Fetch channel stats and video data using YouTube Data API
+
+Clean and transform JSON → CSV
+
+Upload CSV to Amazon S3 using Boto3
+
+Query data using Amazon Athena
+
+Tech Stack: Python, YouTube Data API, Boto3, Amazon S3, Athena
+
+Folder: youtube-etl-pipeline/local-version
+
+Version 2: AWS Lambda
+
+Description: Serverless ETL pipeline to fetch YouTube channel stats and automate uploads.
+
+Workflow:
+
+Fetch channel stats and video data using YouTube Data API with AWS Lambda
+
+Store raw JSON directly in Amazon S3
+
+Transform and clean data using AWS Glue
+
+Store transformed data in Amazon S3
+
+Query and analyze data using Amazon Athena
+
+Schedule automated runs using EventBridge
+
+Tech Stack: Python, YouTube Data API, AWS Lambda, AWS Glue, Amazon S3, Athena, EventBridge
+
+Folder: youtube-etl-pipeline/lambda-version
+
+###3. Weather Data ETL Pipeline
+
+Description: Pipeline to fetch live weather data for multiple cities and make it analytics-ready.
+
+Workflow:
+
+Fetch live weather data using OpenWeatherMap API
+
+Store raw data in CSV/JSON format in Amazon S3
+
+Transform and clean data using AWS Glue
+
+Query and analyze data using Amazon Athena
+
+Tech Stack: Python, OpenWeatherMap API, AWS Glue, Amazon S3, Athena
+
+Folder: weather-etl-pipeline
