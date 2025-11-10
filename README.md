@@ -1,13 +1,13 @@
-#Data Engineering Projects
+# **Data Engineering Projects**
 
 This repository contains real-world ETL projects demonstrating Python, PySpark, AWS, and data pipeline skills. Each project includes data extraction, transformation, and loading workflows, showcasing cloud-based ETL automation and analytics.
 
-Projects
-###1. Spotify Playlist ETL Pipeline
+## **Projects**
+### **1. Spotify Playlist ETL Pipeline**
 
-Description: Serverless ETL pipeline to fetch, transform, and store Spotify playlist data for analytics.
+**Description:** Serverless ETL pipeline to fetch, transform, and store Spotify playlist data for analytics.
 
-Workflow:
+**Workflow:**
 
 Fetch playlist data from Spotify API using AWS Lambda
 
@@ -25,12 +25,13 @@ Tech Stack: Python, PySpark, AWS Lambda, AWS Glue, Amazon S3, Athena, EventBridg
 
 Folder: spotify-etl-pipeline
 
-###2. YouTube Channel Stats ETL Pipeline
-Version 1: Local Script
+### **2. YouTube Channel Stats ETL Pipeline**
 
-Description: Local ETL pipeline to collect YouTube channel stats and prepare data for analytics.
+#### **Version 1: Local Script**
 
-Workflow:
+**Description:** Local ETL pipeline to collect YouTube channel stats and prepare data for analytics.
+
+**Workflow:**
 
 Fetch channel stats and video data using YouTube Data API
 
@@ -44,11 +45,11 @@ Tech Stack: Python, YouTube Data API, Boto3, Amazon S3, Athena
 
 Folder: youtube-etl-pipeline/local-version
 
-Version 2: AWS Lambda
+#### **Version 2: AWS Lambda**
 
-Description: Serverless ETL pipeline to fetch YouTube channel stats and automate uploads.
+**Description:** Serverless ETL pipeline to fetch YouTube channel stats and automate uploads.
 
-Workflow:
+**Workflow:**
 
 Fetch channel stats and video data using YouTube Data API with AWS Lambda
 
@@ -66,11 +67,11 @@ Tech Stack: Python, YouTube Data API, AWS Lambda, AWS Glue, Amazon S3, Athena, E
 
 Folder: youtube-etl-pipeline/lambda-version
 
-###3. Weather Data ETL Pipeline
+### ****3. Weather Data ETL Pipeline****
 
-Description: Pipeline to fetch live weather data for multiple cities and make it analytics-ready.
+**Description:** Pipeline to fetch live weather data for multiple cities and make it analytics-ready.
 
-Workflow:
+**Workflow:**
 
 Fetch live weather data using OpenWeatherMap API
 
